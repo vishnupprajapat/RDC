@@ -22,17 +22,18 @@ type HeroProps = {
             {/* Badge / Welcome Text */}
             <h1 className="text-center text-white font-work-sans font-normal leading-6 prose py-1 px-3 
                             text-lg sm:text-2xl md:mb-5 md:text-3xl lg:text-[44px]">
-                  {hero?.badge && (
-                    <TextAnimate 
-                    animation="blurInUp"
-                     by="character" 
-                    duration={0.5}
-                    delay={0.1}
-                    once
-                    >
-                      {hero.badge}
-                    </TextAnimate>
-                  )}
+                              {hero?.badge}
+                  {/* {hero?.badge && (
+                    // <TextAnimate 
+                    // animation="blurInUp"
+                    //  by="character" 
+                    // duration={0.5}
+                    // delay={0.1}
+                    // once
+                    // >
+                       {hero.badge}
+                    // </TextAnimate>
+                  )} */}
              </h1>
 
             {/* Main Heading */}
