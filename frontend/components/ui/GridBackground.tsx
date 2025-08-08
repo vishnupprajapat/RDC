@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "../../app/lib/utils";
+import { cn } from "@/app/lib/utils";
 import React from "react";
 
 export function GridBackground({ children }: { children?: React.ReactNode }) {
