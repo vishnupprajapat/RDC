@@ -47,3 +47,36 @@
   }
 
 
+/* 1) Keyframes: transparent → glass */
+@keyframes header-glass {
+  from {
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    background-color: rgba(4, 36, 61, 0.781);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10  0px);
+
+  }
+}
+
+.header-glass {
+  animation-name: header-glass;
+  animation-duration: 1s;            
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-timeline: scroll(root);
+  animation-range: 300px 450px;    
+  will-change: backdrop-filter, background-color;
+}
+
+
+@supports not (animation-timeline: scroll(root)) {
+  .header-glass {
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}

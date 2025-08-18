@@ -33,12 +33,12 @@ export const AgencyBrands: React.FC<FocusedAgenciesProps> = ({ focusedAgencies }
             {/* 🔹 Main Content */}
             <div className="relative z-20 mx-auto sm:pb-10 container  text-center ">
                 {focusedAgencies?.heading &&
-                    <h2 className="text-2xl sm:text-4xl md:text-[50px] font-work-sans font-semibold mb-[70px] text-black">
+                    <h2 className="text-2xl sm:text-5xl md:text-[50px] font-work-sans font-semibold mb-[40px] md:mb-[70px] text-black">
                         {focusedAgencies?.heading}
                     </h2>
                 }
                 {focusedAgencies.agencies &&
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-18 ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-18 ">
                         {/* CMS MINDS */}
                         {focusedAgencies.agencies.map((agency: any) => {
                             const image = agency.logo;
@@ -71,11 +71,11 @@ export const AgencyBrands: React.FC<FocusedAgenciesProps> = ({ focusedAgencies }
                                         </span>
                                     </div>
 
-                                    <h3 className="text-[24px] md:text-[28px] lg:text-[34px]  font-work-sans font-semibold mt-[50px] text-center"
+                                    <h3 className="text-[20px] sm:text-[28px] lg:text-[34px]  font-work-sans font-semibold mt-[30px] md:mt-[50px] text-center"
                                       dangerouslySetInnerHTML={{ __html: agency.tagline }}
                                     />
                                      
-                                    <p className="mt-[40px] sm:text-lg md:text-xl text-[20px] font-work-sans font-normal  text-[#000F1A] text-center">
+                                    <p className="mt-[30px] md:mt-[40px] text-base sm:text-lg md:text-xl font-work-sans font-normal  text-[#000F1A] text-center">
                                         {agency.description}
                                     </p>
                                 </Link>
