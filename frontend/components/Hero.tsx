@@ -38,7 +38,7 @@ type HeroProps = {
 
             {/* Main Heading */}
             <h2 className="text-center md:mb-10 text-white font-work-sans font-bold 
-                            text-3xl sm:text-5xl md:text-[96px] lg:text-8xl">
+                            text-3xl sm:text-5xl md:text-[90px] ">
             {hero?.heading}
             </h2>
 
