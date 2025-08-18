@@ -16,7 +16,7 @@ type HeroProps = {
   return (
     <GridBackground>
         <div className="container">
-        <div className="relative mx-auto pt-8 sm:pt-10 xl:pt-10 sm:pb-10 space-y-4 sm:space-y-6 lg:max-w-6xl lg:px-12 flex flex-col items-center justify-center">
+        <div className="relative mx-auto sm:pt-10 xl:pt-10 sm:pb-10 space-y-4 sm:space-y-6 lg:max-w-6xl lg:px-12 flex flex-col items-center justify-center">
             <div className="flex flex-col gap-4 sm:gap-7 items-center">
 
             {/* Badge / Welcome Text */}
@@ -38,7 +38,7 @@ type HeroProps = {
 
             {/* Main Heading */}
             <h2 className="text-center md:mb-10 text-white font-work-sans font-bold 
-                            text-3xl sm:text-5xl md:text-[90px] ">
+                            text-2xl sm:text-5xl md:text-[60px] xl:text-[90px] ">
             {hero?.heading}
             </h2>
 
