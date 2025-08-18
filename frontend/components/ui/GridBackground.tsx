@@ -8,7 +8,7 @@ export function GridBackground({ children }: { children?: React.ReactNode }) {
                 <span
 
                   className={cn(
-                    "pointer-events-none absolute size-1.5 rotate-[180deg] top-[239px] r rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10] animate-meteor-move-left ",
+                    "z-[5] pointer-events-none absolute size-1.5 rotate-[180deg] top-[239px] r rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10] animate-meteor-move-left ",
                   )}
                 >
                   {/* Meteor Tail */}
@@ -17,7 +17,7 @@ export function GridBackground({ children }: { children?: React.ReactNode }) {
                 <span
 
                   className={cn(
-                    "animate-meteor-move-left pointer-events-none absolute size-1.5 rotate-[180deg] left-[400px] bottom-[165px] rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10]",
+                    "z-[5] animate-meteor-move-left pointer-events-none absolute size-1.5 rotate-[180deg] left-[400px] bottom-[165px] rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10]",
                   )}
                 >
                   {/* Meteor Tail */}
@@ -26,7 +26,7 @@ export function GridBackground({ children }: { children?: React.ReactNode }) {
                 <span
 
                   className={cn(
-                    "animate-meteor-move-left pointer-events-none absolute size-1.5 rotate-[270deg] left-[319px] top-[26%] rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10]",
+                    "z-[5] animate-meteor-move-left pointer-events-none absolute size-1.5 rotate-[270deg] left-[319px] top-[26%] rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10]",
                   )}
                 >
                   {/* Meteor Tail */}
@@ -35,7 +35,7 @@ export function GridBackground({ children }: { children?: React.ReactNode }) {
                 <span
 
                   className={cn(
-                    "animate-meteor-move-left pointer-events-none absolute size-1.5 rotate-[270deg] right-[149px] top-[40%] rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10]",
+                    "z-[5] animate-meteor-move-left pointer-events-none absolute size-1.5 rotate-[270deg] right-[149px] top-[40%] rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10]",
                   )}
                 >
                   {/* Meteor Tail */}
@@ -44,7 +44,7 @@ export function GridBackground({ children }: { children?: React.ReactNode }) {
                 <span
 
                   className={cn(
-                    "animate-meteor-move-left pointer-events-none absolute size-1.5 rotate-[270deg] right-[308px] bottom-[20%]  rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10]",
+                    "z-[5] animate-meteor-move-left pointer-events-none absolute size-1.5 rotate-[270deg] right-[308px] bottom-[20%]  rounded-full bg-[#125477] shadow-[0_0_0_1px_#ffffff10]",
                   )}
                 >
                   {/* Meteor Tail */}
@@ -57,9 +57,9 @@ export function GridBackground({ children }: { children?: React.ReactNode }) {
           "[background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)]"
         )}
       />
-      <div className="absolute h-full w-[50%] left-0 pointer-events-none inset-0 bg-[#04243D]/80 bg-no-repeat [background-clip:padding-box] blur-[50px]"></div>
+      <div className="absolute h-[50%] w-[40%] top-[15%] z-0 left-[10%] pointer-events-none inset-0 bg-[#04243D]/75 [background-clip:padding-box] bg-no-repeat  blur-[50px]"></div>
        {/* Radial gradient for faded edges */}
-      {/* <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div> */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#04243D] [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]"></div>
       {children}
     </div>
   );
