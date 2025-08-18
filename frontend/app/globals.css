@@ -43,9 +43,14 @@
 
 }
   .animate-meteor-move-left {
-    animation: meteor-move-left 10s linear infinite;
+    animation: meteor-move-left 20s linear infinite;
   }
 
+  @media (min-width: 768px) {
+    .animate-meteor-move-left {
+      animation-duration: 25s;
+    }
+  }
 
 /* 1) Keyframes: transparent → glass */
 @keyframes header-glass {

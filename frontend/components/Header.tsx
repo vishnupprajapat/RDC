@@ -12,8 +12,8 @@ export default function Header() {
     >
       <div className="container py-6 px-2 sm:px-6">
         <div className="flex items-center justify-between gap-5">
-          <Link className="flex items-center gap-2" href="/">
-            <span className="text-lg md:text-2xl pl-2 leading-5 text-white md:text-[44px] font-bold ">
+          <Link className=" items-center gap-2 inline-block h-auto" href="/">
+            <span className="text-[24px] md:text-2xl pl-2 leading-5 text-white md:text-[44px] font-bold ">
               rdc
             </span>
           </Link>
