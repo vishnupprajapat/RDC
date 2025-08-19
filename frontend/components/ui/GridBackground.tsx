@@ -4,7 +4,7 @@ import React from "react";
 
 export function GridBackground({ children }: { children?: React.ReactNode }) {
   return (
-    <div className="relative overflow-hidden flex h-[600px] md:h-screen w-full items-center justify-center bg-[#04243D]">
+    <div className="relative overflow-hidden flex h-[100vh] md:h-screen w-full items-center justify-center bg-[#04243D]">
                 <span
 
                   className={cn(
