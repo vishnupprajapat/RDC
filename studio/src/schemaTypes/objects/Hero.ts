@@ -15,35 +15,35 @@ export const heroSection = defineType({
       description: 'Short text above the heading, e.g., "Welcome to"',
       validation: (Rule) => Rule.max(50),
     }),
-    defineField({
-      name: 'badgeOptions',
-      title: 'Badge Settings',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'semanticTag',
-          title: 'Semantic Tag',
-          type: 'string',
-          options: {
-            list: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
-            layout: 'radio',
-            direction: 'horizontal',
-          },
-          initialValue: 'h1',
-        }),
-        defineField({
-          name: 'visualStyle',
-          title: 'Visual Style',
-          type: 'string',
-          options: {
-            list: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
-            layout: 'radio',
-            direction: 'horizontal',
-          },
-          initialValue: 'h6',
-        }),
-      ],
-    }),
+    // defineField({
+    //   name: 'badgeOptions',
+    //   title: 'Badge Settings',
+    //   type: 'object',
+    //   fields: [
+    //     defineField({
+    //       name: 'semanticTag',
+    //       title: 'Semantic Tag',
+    //       type: 'string',
+    //       options: {
+    //         list: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    //         layout: 'radio',
+    //         direction: 'horizontal',
+    //       },
+    //       initialValue: 'h1',
+    //     }),
+    //     defineField({
+    //       name: 'visualStyle',
+    //       title: 'Visual Style',
+    //       type: 'string',
+    //       options: {
+    //         list: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    //         layout: 'radio',
+    //         direction: 'horizontal',
+    //       },
+    //       initialValue: 'h6',
+    //     }),
+    //   ],
+    // }),
 
     // Main Heading (semantic + visual)
     defineField({
@@ -53,35 +53,35 @@ export const heroSection = defineType({
       description: 'Primary title of the hero section',
       validation: (Rule) => Rule.required().max(100),
     }),
-    defineField({
-      name: 'headingOptions',
-      title: 'Main Heading Settings',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'semanticTag',
-          title: 'Semantic Tag',
-          type: 'string',
-          options: {
-            list: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
-            layout: 'radio',
-            direction: 'horizontal',
-          },
-          initialValue: 'h2',
-        }),
-        defineField({
-          name: 'visualStyle',
-          title: 'Visual Style',
-          type: 'string',
-          options: {
-            list: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
-            layout: 'radio',
-            direction: 'horizontal',
-          },
-          initialValue: 'h1',
-        }),
-      ],
-    }),
+    // defineField({
+    //   name: 'headingOptions',
+    //   title: 'Main Heading Settings',
+    //   type: 'object',
+    //   fields: [
+    //     defineField({
+    //       name: 'semanticTag',
+    //       title: 'Semantic Tag',
+    //       type: 'string',
+    //       options: {
+    //         list: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    //         layout: 'radio',
+    //         direction: 'horizontal',
+    //       },
+    //       initialValue: 'h2',
+    //     }),
+    //     defineField({
+    //       name: 'visualStyle',
+    //       title: 'Visual Style',
+    //       type: 'string',
+    //       options: {
+    //         list: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    //         layout: 'radio',
+    //         direction: 'horizontal',
+    //       },
+    //       initialValue: 'h1',
+    //     }),
+    //   ],
+    // }),
 
     // Subheading
     defineField({
