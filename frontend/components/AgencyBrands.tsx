@@ -33,7 +33,7 @@ export const AgencyBrands: React.FC<FocusedAgenciesProps> = ({ focusedAgencies }
             {/* 🔹 Main Content */}
             <div className="relative z-20 mx-auto sm:pb-10 container  text-center ">
                 {focusedAgencies?.heading &&
-                    <h2 className="text-2xl sm:text-5xl md:text-[50px] font-work-sans font-semibold mb-[40px] md:mb-[70px] text-black">
+                    <h2 className="text-2xl sm:text-4xl [@media(min-width:1281px)]:text-[50px] font-work-sans font-semibold sm:mb-[40px] md:mb-[50px] [@media(min-width:1281px)]:mb-[70px] text-[#000F1A]">
                         {focusedAgencies?.heading}
                     </h2>
                 }
@@ -71,7 +71,7 @@ export const AgencyBrands: React.FC<FocusedAgenciesProps> = ({ focusedAgencies }
                                         </span>
                                     </div>
 
-                                    <h3 className="text-[20px] sm:text-[28px] lg:text-[34px]  font-work-sans font-semibold mt-[30px] md:mt-[50px] text-center"
+                                    <h3 className="text-[20px] sm:text-[25px] [@media(min-width:1281px)]:text-[34px]  font-work-sans font-semibold mt-[30px] [@media(min-width:1281px)]:mt-[50px] text-center"
                                       dangerouslySetInnerHTML={{ __html: agency.tagline }}
                                     />
                                      

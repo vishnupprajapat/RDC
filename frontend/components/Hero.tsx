@@ -21,7 +21,7 @@ type HeroProps = {
 
             {/* Badge / Welcome Text */}
             <h1 className="text-center text-white font-work-sans font-normal leading-6 prose py-1 px-3 
-                            text-lg sm:text-2xl md:mb-5 md:text-3xl lg:text-[44px]">
+                            text-lg sm:text-2xl [@media(min-width:1281px)]:mb-5 md:text-3xl [@media(min-width:1281px)]:text-[44px]">
                               {hero?.badge}
                   {/* {hero?.badge && (
                     // <TextAnimate 
@@ -37,14 +37,14 @@ type HeroProps = {
              </h1>
 
             {/* Main Heading */}
-            <h2 className="text-center md:mb-10 text-white font-work-sans font-bold 
-                            text-2xl sm:text-5xl md:text-[60px] xl:text-[90px] ">
+            <h2 className="text-center [@media(min-width:1281px)]:mb-10 text-white font-work-sans font-bold 
+                            text-2xl sm:text-4xl  [@media(min-width:1281px)]:text-[90px] ">
             {hero?.heading}
             </h2>
 
             {/* Subheading */}
             <span className="text-center text-white font-work-sans font-normal
-                            text-lg sm:text-2xl lg:text-3xl">
+                            text-lg sm:text-2xl [@media(min-width:1281px)]:text-3xl">
             {hero?.subheading}
             </span>
 
