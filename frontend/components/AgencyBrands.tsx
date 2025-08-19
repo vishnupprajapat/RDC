@@ -33,7 +33,7 @@ export const AgencyBrands: React.FC<FocusedAgenciesProps> = ({ focusedAgencies }
             {/* 🔹 Main Content */}
             <div className="relative z-20 mx-auto sm:pb-10 container  text-center ">
                 {focusedAgencies?.heading &&
-                    <h2 className="text-2xl sm:text-4xl [@media(min-width:1281px)]:text-[50px] font-work-sans font-semibold sm:mb-[40px] md:mb-[50px] [@media(min-width:1281px)]:mb-[70px] text-[#000F1A]">
+                    <h2 className="text-2xl sm:text-4xl [@media(min-width:1281px)]:text-[50px] font-work-sans font-semibold mb-[40px] md:mb-[50px] [@media(min-width:1281px)]:mb-[70px] text-[#000F1A]">
                         {focusedAgencies?.heading}
                     </h2>
                 }
