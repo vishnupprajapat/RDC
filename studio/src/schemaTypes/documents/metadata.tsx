@@ -2,7 +2,8 @@ import { defineField, defineType } from 'sanity'
 import { CharacterCount } from 'sanitypress-utils'
 import PreviewOG from '../../components/ui/PreviewOG'
 
-export default defineType({
+
+export const metadata = defineType({
 	name: 'metadata',
 	title: 'Metadata',
 	description: 'For search engines',
