@@ -38,6 +38,11 @@ export async function generateMetadata(): Promise<Metadata> {
       "Resources",
       "Community",
     ],
+    robots:{
+      index: true,
+      follow: true,
+      noarchive: false,
+    },
     title: {
       template: `%s | ${title}`,
       default: title,
