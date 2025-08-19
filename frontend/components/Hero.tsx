@@ -16,12 +16,12 @@ type HeroProps = {
   return (
     <GridBackground>
         <div className="container">
-        <div className="relative mx-auto sm:pt-10 xl:pt-10 sm:pb-10 space-y-4 sm:space-y-6 lg:max-w-6xl lg:px-12 flex flex-col items-center justify-center">
+        <div className="relative z-[7] mx-auto sm:pt-10 xl:pt-10 sm:pb-10 space-y-4 sm:space-y-6 lg:max-w-6xl lg:px-12 flex flex-col items-center justify-center">
             <div className="flex flex-col gap-4 sm:gap-7 items-center">
 
             {/* Badge / Welcome Text */}
             <h1 className="text-center text-white font-work-sans font-normal leading-6 prose py-1 px-3 
-                            text-lg sm:text-2xl md:mb-5 md:text-3xl lg:text-[44px]">
+                            text-lg sm:text-2xl [@media(min-width:1281px)]:mb-5 md:text-3xl [@media(min-width:1281px)]:text-[44px]">
                               {hero?.badge}
                   {/* {hero?.badge && (
                     // <TextAnimate 
@@ -37,14 +37,14 @@ type HeroProps = {
              </h1>
 
             {/* Main Heading */}
-            <h2 className="text-center md:mb-10 text-white font-work-sans font-bold 
-                            text-2xl sm:text-5xl md:text-[60px] xl:text-[90px] ">
+            <h2 className="text-center [@media(min-width:1281px)]:mb-10 text-white font-work-sans font-bold 
+                            text-2xl sm:text-4xl  [@media(min-width:1281px)]:text-[90px] ">
             {hero?.heading}
             </h2>
 
             {/* Subheading */}
             <span className="text-center text-white font-work-sans font-normal
-                            text-lg sm:text-2xl lg:text-3xl">
+                            text-lg sm:text-2xl [@media(min-width:1281px)]:text-3xl">
             {hero?.subheading}
             </span>
 
