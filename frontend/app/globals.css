@@ -85,3 +85,9 @@
     -webkit-backdrop-filter: none;
   }
 }
+
+@media (min-width: 1280px) and (max-width: 1280px) {
+  .hero-p {
+    max-width: 70%;
+  }
+}

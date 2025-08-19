@@ -75,7 +75,7 @@ export const AgencyBrands: React.FC<FocusedAgenciesProps> = ({ focusedAgencies }
                                       dangerouslySetInnerHTML={{ __html: agency.tagline }}
                                     />
                                      
-                                    <p className="mt-[30px] md:mt-[40px] text-base sm:text-lg md:text-xl font-work-sans font-normal  text-[#000F1A] text-center">
+                                    <p className="mt-[30px] md:mt-[40px] text-base  [@media(min-width:1281px)]:text-xl font-work-sans font-normal  text-[#000F1A] text-center">
                                         {agency.description}
                                     </p>
                                 </Link>
