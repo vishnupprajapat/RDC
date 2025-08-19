@@ -20,7 +20,7 @@ type HeroProps = {
             <div className="flex flex-col gap-4 sm:gap-7 items-center">
 
             {/* Badge / Welcome Text */}
-            <h1 className="text-center text-white font-work-sans font-normal leading-6 prose py-1 px-3 
+            <span className="text-center text-white font-work-sans font-normal leading-6 prose py-1 px-3 
                             text-lg sm:text-2xl [@media(min-width:1281px)]:mb-5 md:text-3xl [@media(min-width:1281px)]:text-[44px]">
                               {hero?.badge}
                   {/* {hero?.badge && (
@@ -34,19 +34,19 @@ type HeroProps = {
                        {hero.badge}
                     // </TextAnimate>
                   )} */}
-             </h1>
+             </span>
 
             {/* Main Heading */}
-            <h2 className="text-center [@media(min-width:1281px)]:mb-10 text-white font-work-sans font-bold 
+            <h1 className="text-center [@media(min-width:1281px)]:mb-10 text-white font-work-sans font-bold 
                             text-2xl sm:text-4xl [@media(min-width:1281px)]:text-[90px] ">
             {hero?.heading}
-            </h2>
+            </h1>
 
             {/* Subheading */}
-            <span className="text-center text-white font-work-sans font-normal
+            <h2 className="text-center text-white font-work-sans font-normal
                             text-lg sm:text-2xl [@media(min-width:1281px)]:text-3xl">
             {hero?.subheading}
-            </span>
+            </h2>
 
             {/* Description */}
             <p className="text-center hero-p text-white font-work-sans font-normal
