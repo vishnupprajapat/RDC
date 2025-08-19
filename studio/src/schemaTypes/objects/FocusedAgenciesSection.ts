@@ -1,6 +1,6 @@
 // ./schemas/sections/focusedAgenciesSection.ts
 
-import { defineType, defineField } from "sanity";
+import { defineType, defineField } from 'sanity';
 
 export const focusedAgenciesSection = defineType({
   name: "focusedAgenciesSection",
