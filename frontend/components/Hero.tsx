@@ -38,7 +38,7 @@ type HeroProps = {
 
             {/* Main Heading */}
             <h2 className="text-center [@media(min-width:1281px)]:mb-10 text-white font-work-sans font-bold 
-                            text-2xl sm:text-4xl  [@media(min-width:1281px)]:text-[90px] ">
+                            text-2xl sm:text-4xl [@media(min-width:1281px)]:text-[90px] ">
             {hero?.heading}
             </h2>
 
@@ -49,8 +49,8 @@ type HeroProps = {
             </span>
 
             {/* Description */}
-            <p className="text-center text-white font-work-sans font-normal
-                            text-base sm:text-lg md:text-xl lg:text-[20px] md:leading-9">
+            <p className="text-center hero-p text-white font-work-sans font-normal
+                            text-base [@media(min-width:1281px)]:text-xl md:leading-9">
             {hero?.description}
             </p>
             </div>
