@@ -21,12 +21,23 @@ export async function generateMetadata(): Promise<Metadata> {
   const ogImage = resolveOpenGraphImage(home?.metadata?.image);
   let metadataBase: URL | undefined = undefined;
   try {
-    metadataBase = new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://rdc.example.com");
+    metadataBase = new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://riverdeltaconsulting.com");
   } catch {
     // ignore
   }
   return {
-    metadataBase,
+    metadataBase: metadataBase,
+    alternates: {
+      canonical: metadataBase ? metadataBase.href : undefined,
+    },
+    keywords: [
+      "RDC",
+      "River Delta Consulting",
+      "Web Development",
+      "Design",
+      "Resources",
+      "Community",
+    ],
     title: {
       template: `%s | ${title}`,
       default: title,
