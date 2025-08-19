@@ -26,6 +26,7 @@
     "rxjs": "^7.8.1",
     "sanity": "^3.99.0",
     "sanity-plugin-asset-source-unsplash": "^3.0.1",
+    "sanitypress-utils": "^0.0.8",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
