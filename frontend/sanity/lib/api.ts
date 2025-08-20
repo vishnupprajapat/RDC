@@ -31,4 +31,4 @@ export const apiVersion =
  * Used to configure edit intent links, for Presentation Mode, as well as to configure where the Studio is mounted in the router.
  */
 export const studioUrl =
-  process.env.NEXT_PUBLIC_SANITY_STUDIO_URL || "http://localhost:3333";
+  process.env.NEXT_PUBLIC_SANITY_STUDIO_URL || "https://riverdeltaconsulting.sanity.studio";
