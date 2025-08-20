@@ -44,6 +44,7 @@ export type FocusedAgenciesSection = {
     name: string;
     tagline: string;
     description: string;
+    url: string;
     _type: "agencyCard";
     _key: string;
   }>;
@@ -52,15 +53,7 @@ export type FocusedAgenciesSection = {
 export type HeroSection = {
   _type: "heroSection";
   badge?: string;
-  badgeOptions?: {
-    semanticTag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-    visualStyle?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  };
   heading: string;
-  headingOptions?: {
-    semanticTag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-    visualStyle?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  };
   subheading?: string;
   description?: string;
   background?: {
